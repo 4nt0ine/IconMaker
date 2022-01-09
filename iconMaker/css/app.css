@@ -17,17 +17,17 @@ h1 {
 /* -----------------------------------------------------------
 Palette de couleur
 ----------------------------------------------------------- */
-.bg_darkestgreen {
-  background: #081820;
+.bg_red {
+  background: #dd0000;
 }
 .bg_darkgreen {
   background: #346856;
 }
-.bg_green {
-  background: #88c070;
+.bg_brown {
+  background: #804822;
 }
-.bg_lightgreen {
-  background: #e0f8d0;
+.bg_darkyellow {
+  background: #b5c01a;
 }
 
 /* -----------------------------------------------------------
@@ -48,7 +48,7 @@ Palette de couleur
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
 }
 .pixel {
-  border: 1px solid transparent;
+  border: 1px solid #0000000f;
   cursor: crosshair;
   transition: border 100ms ease-in-out;
 }
