@@ -89,6 +89,7 @@ function makeColors() {
   //   $(this).addClass(bg_color);
   // });
 
+  //si on clique sur le bouton de background black, tous les pixels deviennent noir
   $("#paint_black").click(function () {
     $("#paint_red").removeClass("is-active");
     $("#paint_darkgreen").removeClass("is-active");
