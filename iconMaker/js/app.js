@@ -16,12 +16,14 @@ function makeColors() {
   $("#paint_red").click(function () {
     $("#paint_red").addClass("is-active");
     $("#paint_darkgreen").removeClass("is-active");
-    $("#paint_brown").removeClass("is-active");
-    $("#paint_darkyellow").removeClass("is-active");
+    $("#paint_pink").removeClass("is-active");
+    $("#paint_yellow").removeClass("is-active");
+    $("#paint_black").removeClass("is-active");
 
     bg_color = "bg_red";
   });
   $(".pixel").click(function () {
+    $(this).removeClass("bg_black");
     $(this).addClass(bg_color);
   });
 
@@ -31,42 +33,75 @@ function makeColors() {
   $("#paint_darkgreen").click(function () {
     $("#paint_red").removeClass("is-active");
     $("#paint_darkgreen").addClass("is-active");
-    $("#paint_brown").removeClass("is-active");
-    $("#paint_darkyellow").removeClass("is-active");
+    $("#paint_pink").removeClass("is-active");
+    $("#paint_yellow").removeClass("is-active");
+    $("#paint_black").removeClass("is-active");
 
     bg_color = "bg_darkgreen";
   });
   $(".pixel").click(function () {
+    $(this).removeClass("bg_black");
     $(this).addClass(bg_color);
   });
 
   //---------------------------
 
-  $("#paint_brown").click(function () {
+  $("#paint_pink").click(function () {
     $("#paint_red").removeClass("is-active");
     $("#paint_darkgreen").removeClass("is-active");
-    $("#paint_brown").addClass("is-active");
-    $("#paint_darkyellow").removeClass("is-active");
+    $("#paint_pink").addClass("is-active");
+    $("#paint_yellow").removeClass("is-active");
+    $("#paint_black").removeClass("is-active");
 
-    bg_color = "bg_brown";
+    bg_color = "bg_pink";
   });
   $(".pixel").click(function () {
+    $(this).removeClass("bg_black");
     $(this).addClass(bg_color);
   });
 
   //---------------------------
 
-  $("#paint_darkyellow").click(function () {
+  $("#paint_yellow").click(function () {
     $("#paint_red").removeClass("is-active");
     $("#paint_darkgreen").removeClass("is-active");
-    $("#paint_brown").removeClass("is-active");
-    $("#paint_darkyellow").addClass("is-active");
+    $("#paint_pink").removeClass("is-active");
+    $("#paint_yellow").addClass("is-active");
+    $("#paint_black").removeClass("is-active");
 
-    bg_color = "bg_darkyellow";
+    bg_color = "bg_yellow";
   });
   $(".pixel").click(function () {
+    $(this).removeClass("bg_black");
     $(this).addClass(bg_color);
   });
+
+  // $("#paint_black").click(function () {
+  //   $("#paint_red").removeClass("is-active");
+  //   $("#paint_darkgreen").removeClass("is-active");
+  //   $("#paint_pink").removeClass("is-active");
+  //   $("#paint_yellow").removeClass("is-active");
+  //   $("#paint_black").addClass("is-active");
+
+  //   bg_color = "bg_black";
+  // });
+  // $(".pixel").click(function () {
+  //   $(this).addClass(bg_color);
+  // });
+
+  $("#paint_black").click(function () {
+    $("#paint_red").removeClass("is-active");
+    $("#paint_darkgreen").removeClass("is-active");
+    $("#paint_pink").removeClass("is-active");
+    $("#paint_yellow").removeClass("is-active");
+    $("#paint_black").addClass("is-active");
+
+    bg_black = "bg_black";
+    $(".pixel").addClass(bg_black);
+  });
+  // $(".pixel").click(function () {
+
+  // });
 }
 
 // function doReset (){
@@ -80,6 +115,7 @@ $(document).ready(function () {
   createGrid();
   makeColors();
   // doReset();
+  paintAll();
 });
 
 // -----------------------------------------------------------
